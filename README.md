@@ -10,7 +10,7 @@ To assign a **credit score between 0 and 1000** to wallets interacting with the 
 
 Each wallet’s score is computed based on:
 
-| Feature                        | Behavior Impact       | Score Effect             |
+| Feature                        | Behavior Impact       | Score Effect             
 |-------------------------------|------------------------|--------------------------|
 | `num_deposits`                | Responsible usage      |  Adds to score         |
 | `repay_borrow_ratio`          | Risk mitigation        |  Strongly boosts score |
@@ -68,10 +68,22 @@ pip install -r requirements.txt
 ---
 
 ##  How to Run
+#first Step 
+Run pip install -r requirements.txt
 
+
+# Second Step 
+# Add file path json file in the last of credit_score.py 
+ generate_credit_scores("your file path" )
+
+
+#Third STep 
 
 # Generate scores
 python credit_score.py
 
 # Optional: Plot distribution
 python plot_scores.py
+
+
+
